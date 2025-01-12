@@ -1,0 +1,45 @@
+---
+
+import "./about.css"
+import { SITE, SOCIALS } from "@consts"
+
+---
+
+<section id="about" class="about">
+	<div class="about__container">
+		<img
+			class="about__img"
+			src="https://www.bpocenter.com.bo/wp-content/uploads/2017/11/10.jpg"
+			alt="Foto de perfil de Jhon Doe"
+		/>
+
+		<div class="about__content">
+			<p class="about__text">
+				Habla sobre tí, tu profesión, lo que te gusta, cual es tu
+				pasatiempos, que haces en tu ratos libres, que cosas te apasionan y
+				has aprendido, ¿porqué elegiste está profesión?, ¿Tienes mascota?
+				¿Te gusta ir a caminar al parque? ¿Estudiaste algo más? ¿En que eres
+				bueno?
+			</p>
+			<div class="order-1 sm:order-2 flex justify-center sm:justify-center">
+                <div class="animated flex flex-wrap gap-2 items-center justify-center mt-5">
+                  {
+                    SOCIALS.map((SOCIAL) => (
+                      <a 
+                        href={SOCIAL.HREF} 
+                        target="_blank" 
+                        aria-label={`${SITE.TITLE} on ${SOCIAL.NAME}`} 
+                        class="group size-12 rounded-full p-2 items-center justify-center hover:bg-black/5 dark:hover:bg-white/20  blend"
+                      >
+                        <svg class="size-full fill-current group-hover:fill-black group-hover:dark:fill-white blend">
+                          <use href={`/social.svg#${SOCIAL.ICON}`} />
+                        </svg>
+                      </a>
+                    ))
+                  }
+                  </div>
+              </div>
+		</div>
+	</div>
+
+</section>
