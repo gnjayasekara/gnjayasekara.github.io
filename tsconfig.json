@@ -8,7 +8,7 @@
         "src/*"
       ]
     },
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "jsxImportSource": "solid-js"
   },
   "include": [

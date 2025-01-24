@@ -1,6 +1,6 @@
 export const settings = {
   site: 'https://gnjayasekara.github.io',
   name: 'Nimtharu',
-  title: 'GNJayasekara | portfolio',
+  title: 'GNJayasekara | Portfolio',
   description: 'Portfolio website',
 }
